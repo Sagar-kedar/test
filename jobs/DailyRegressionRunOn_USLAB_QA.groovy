@@ -40,7 +40,7 @@ pipelineJob('DailyRegressionRunOn_USLAB_QA') {
                     stage('Build') {
                         steps {
                             sh '''
-                                # cd /home/automation/krista-pytest-automation
+                                cd /home/automation/krista-pytest-automation
                                 cd "${WORKSPACE}"
                                 touch propsfile
                                 export PYTHONPATH=.
