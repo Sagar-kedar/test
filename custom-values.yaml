@@ -549,15 +549,15 @@ controller:
                   scm {
                       git {
                           remote {
-                              url('https://sagarkedar-admin@bitbucket.org/sagarkedar/krista.git')
-                              credentials('bitbucketcred')
+                              url('https://github.com/Sagar-kedar/test.git')
+                              credentials('	gitcred')
                           }
                           branch('main')
                       }
                   }
                   steps {
                       dsl {
-                          external('krista/jobs/test.groovy')
+                          external('jobs/DailyRegressionRunOn_USLAB_QA.groovy')
                           removeAction('DELETE')
                       }
                       triggers {
