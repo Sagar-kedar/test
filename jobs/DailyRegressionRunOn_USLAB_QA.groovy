@@ -40,6 +40,7 @@ pipelineJob('DailyRegressionRunOn_USLAB_QA') {
                     stage('Build') {
                         steps {
                             sh '''
+                                mkdir /home/automation/krista-pytest-automation
                                 cd /home/automation/krista-pytest-automation
                                 cd "${WORKSPACE}"
                                 touch propsfile
