@@ -544,7 +544,7 @@ controller:
       git-job: |
         jobs:
           - script: >
-              job('seed-job') {
+              job('multi-choice-job') {
                   description('Seed job to generate pipeline jobs from the tools Git repository.')    
                   scm {
                       git {
