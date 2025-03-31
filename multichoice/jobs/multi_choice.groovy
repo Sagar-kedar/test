@@ -1,7 +1,7 @@
 pipelineJob('MULTI_CHOICE') {
 definition {
     cps {
-    script(
+    script("""
         pipeline {
         agent any
         parameters {
@@ -65,7 +65,7 @@ definition {
             }
         }
         }
-    )    
+    """)    
     }
 }
 }
