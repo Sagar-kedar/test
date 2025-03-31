@@ -557,7 +557,7 @@ controller:
                   }
                   steps {
                       dsl {
-                          external('multichoice/jobs/multi-choice.groovy')
+                          external('multichoice/jobs/multi_choice.groovy')
                           removeAction('DELETE')
                       }
                       triggers {
