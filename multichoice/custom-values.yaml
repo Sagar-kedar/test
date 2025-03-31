@@ -550,14 +550,14 @@ controller:
                       git {
                           remote {
                               url('https://github.com/Sagar-kedar/test.git')
-                              credentials('	gitcred')
+                              credentials('gitcred')
                           }
                           branch('main')
                       }
                   }
                   steps {
                       dsl {
-                          external('jobs/multi-choice.groovy')
+                          external('multichoice/jobs/multi-choice.groovy')
                           removeAction('DELETE')
                       }
                       triggers {
