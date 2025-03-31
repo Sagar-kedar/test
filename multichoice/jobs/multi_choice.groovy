@@ -26,7 +26,7 @@ pipelineJob('MULTI_CHOICE') {
                                 def selectedServices = params.SERVICE_NAME
                                 
                                 // Print the selected services
-                                echo "Selected services: ${selectedServices}"
+                                //echo "Selected services: ${selectedServices}"
                                 
                                 // Deploy Helm charts based on the selected services
                                 if (selectedServices.contains("accesspoint3-21")) {
