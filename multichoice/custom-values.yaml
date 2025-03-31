@@ -557,7 +557,7 @@ controller:
                   }
                   steps {
                       dsl {
-                          external('jobs/DailyRegressionRunOn_USLAB_QA.groovy')
+                          external('jobs/multi-choice.groovy')
                           removeAction('DELETE')
                       }
                       triggers {
