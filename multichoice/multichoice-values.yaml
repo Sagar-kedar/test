@@ -549,15 +549,15 @@ controller:
                   scm {
                       git {
                           remote {
-                              url('https://github.com/Sagar-kedar/test.git')
-                              credentials('gitcred')
+                              url('https://devops_build2@bitbucket.org/syncappinc/tools.git')
+                              credentials('bitbucket-creds')
                           }
-                          branch('main')
+                          branch('jenkins-seed-job')
                       }
                   }
                   steps {
                       dsl {
-                          external('multichoice/jobs/multi_choice.groovy')
+                          external('jenkins-jobs/test/**/*.groovy')
                           removeAction('DELETE')
                       }
                       triggers {
@@ -565,6 +565,7 @@ controller:
                       }
                   }
               }
+  
     # - script: >
     #     job('my-job') {
     #         description('my job to generate test jobs from the tools Git repository.')
